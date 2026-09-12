@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard | Phishing Awareness Training</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">◈</div>
+      <div>
+        <h1>PHISHGUARD</h1>
+        <p>Security Awareness</p>
+      </div>
+    </div>
+
+    <nav>
+      <button class="nav-item active" data-section="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav-item" data-section="phishing">◉ <span>What is Phishing?</span></button>
+      <button class="nav-item" data-section="examples">✉ <span>Spot the Phish</span></button>
+      <button class="nav-item" data-section="websites">⌁ <span>Fake Websites</span></button>
+      <button class="nav-item" data-section="social">♙ <span>Social Engineering</span></button>
+      <button class="nav-item" data-section="checklist">✓ <span>Safety Checklist</span></button>
+      <button class="nav-item" data-section="quiz">? <span>Interactive Quiz</span></button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="status-dot"></span>
+      Training environment
+      <small>CodeAlpha Internship Project</small>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CYBERSECURITY AWARENESS</p>
+        <h2 id="page-title">Phishing Awareness Training</h2>
+      </div>
+      <div class="topbar-badge"><span class="status-dot"></span> Defensive learning mode</div>
+    </header>
+
+    <section id="dashboard" class="section active">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">WELCOME TO PHISHGUARD</p>
+          <h3>Think before you click.</h3>
+          <p class="hero-text">Learn how attackers use deceptive messages, fake websites, and social engineering to manipulate people—and how to recognize the warning signs.</p>
+          <button class="primary-btn" data-go="phishing">Start Training <span>→</span></button>
+        </div>
+        <div class="hero-shield">◈</div>
+      </div>
+
+      <div class="stat-grid">
+        <article class="stat-card"><span class="stat-icon purple">◉</span><div><strong>6</strong><small>Learning modules</small></div></article>
+        <article class="stat-card"><span class="stat-icon blue">✉</span><div><strong>4</strong><small>Phishing examples</small></div></article>
+        <article class="stat-card"><span class="stat-icon green">✓</span><div><strong>8</strong><small>Quiz questions</small></div></article>
+        <article class="stat-card"><span class="stat-icon amber">!</span><div><strong>100%</strong><small>Defensive focus</small></div></article>
+      </div>
+
+      <div class="content-grid two">
+        <article class="panel">
+          <div class="panel-heading"><span class="panel-icon">◈</span><div><h4>Why this matters</h4><p>Phishing targets people, not just technology.</p></div></div>
+          <p>Attackers often create a sense of urgency, impersonate trusted organizations, or offer attractive rewards. A careful pause can prevent account compromise, data loss, and financial damage.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><span class="panel-icon">✓</span><div><h4>Core habit</h4><p>Stop, inspect, verify.</p></div></div>
+          <ul class="clean-list">
+            <li>Do not click under pressure.</li>
+            <li>Check the sender and destination.</li>
+            <li>Verify requests through a trusted channel.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="phishing" class="section">
+      <div class="section-heading"><p class="eyebrow">MODULE 01</p><h3>What is phishing?</h3><p>Phishing is a social engineering technique in which an attacker impersonates a trusted person or organization to trick someone into revealing information, opening a malicious file, or visiting a harmful website.</p></div>
+      <div class="content-grid three">
+        <article class="feature-card"><span class="feature-number">01</span><h4>Email phishing</h4><p>Fraudulent emails imitate banks, delivery companies, employers, or online services.</p></article>
+        <article class="feature-card"><span class="feature-number">02</span><h4>Spear phishing</h4><p>Highly targeted messages use personal or organizational details to appear credible.</p></article>
+        <article class="feature-card"><span class="feature-number">03</span><h4>Smishing & vishing</h4><p>Smishing uses SMS messages; vishing uses voice calls to create trust or urgency.</p></article>
+      </div>
+      <div class="warning-box"><strong>Remember:</strong> A message can look professional and still be malicious. Branding, logos, and familiar names are not proof of authenticity.</div>
+    </section>
+
+    <section id="examples" class="section">
+      <div class="section-heading"><p class="eyebrow">MODULE 02</p><h3>Spot the phish</h3><p>Review the examples below. These are fictional training samples. Do not interact with real suspicious links or enter credentials into unknown pages.</p></div>
+      <div class="email-grid">
+        <article class="email-card">
+          <div class="email-top"><span class="mail-badge suspicious">SUSPICIOUS</span><span>Example 01</span></div>
+          <h4>Urgent account verification required</h4>
+          <p><b>From:</b> account-security@secure-alerts.example</p>
+          <p><b>Message:</b> Your account will be suspended in 30 minutes. Confirm your password immediately to avoid losing access.</p>
+          <div class="red-flags"><b>Red flags:</b> Artificial deadline, password request, unfamiliar sender domain.</div>
+        </article>
+        <article class="email-card">
+          <div class="email-top"><span class="mail-badge suspicious">SUSPICIOUS</span><span>Example 02</span></div>
+          <h4>You have won a reward</h4>
+          <p><b>From:</b> rewards@unknown-prize.example</p>
+          <p><b>Message:</b> You were selected for a reward. Pay a small processing fee and provide your card details to claim it.</p>
+          <div class="red-flags"><b>Red flags:</b> Unexpected prize, payment demand, sensitive-data request.</div>
+        </article>
+        <article class="email-card">
+          <div class="email-top"><span class="mail-badge suspicious">SUSPICIOUS</span><span>Example 03</span></div>
+          <h4>Invoice attached</h4>
+          <p><b>From:</b> billing@vendor-check.example</p>
+          <p><b>Message:</b> Please open the attached invoice immediately. Failure to respond will result in legal action.</p>
+          <div class="red-flags"><b>Red flags:</b> Unexpected attachment, intimidation, no known business context.</div>
+        </article>
+        <article class="email-card">
+          <div class="email-top"><span class="mail-badge review">VERIFY FIRST</span><span>Example 04</span></div>
+          <h4>Password reset notification</h4>
+          <p><b>From:</b> A service you actually use</p>
+          <p><b>Message:</b> A password reset was requested. You did not request it.</p>
+          <div class="red-flags"><b>Safe response:</b> Do not use the email button. Open the official app or website manually and review account activity.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="websites" class="section">
+      <div class="section-heading"><p class="eyebrow">MODULE 03</p><h3>Recognizing fake websites</h3><p>Fraudulent websites often copy the appearance of legitimate services. Inspect the destination before entering information.</p></div>
+      <div class="content-grid two">
+        <article class="panel"><h4>Inspect the address</h4><ul class="check-list"><li>Look for misspellings and extra words in the domain.</li><li>Be cautious with unusual top-level domains or shortened links.</li><li>HTTPS encrypts traffic but does not prove a website is legitimate.</li><li>Navigate manually using a known bookmark or official search result.</li></ul></article>
+        <article class="panel"><h4>Watch for manipulation</h4><ul class="check-list"><li>Login pages demanding unnecessary information.</li><li>Pop-ups claiming your device is infected.</li><li>Pressure to disable security tools or install unknown software.</li><li>Requests for passwords, one-time codes, or payment details.</li></ul></article>
+      </div>
+      <div class="fake-url"><span class="lock">⌕</span><span>https://secure-login.<b>example</b>/verify-account</span><span class="url-note">Training illustration only</span></div>
+    </section>
+
+    <section id="social" class="section">
+      <div class="section-heading"><p class="eyebrow">MODULE 04</p><h3>Social engineering tactics</h3><p>Social engineering exploits human behavior. The attacker wants you to act emotionally instead of verifying the request.</p></div>
+      <div class="tactic-grid">
+        <article class="tactic-card"><span>⏱</span><h4>Urgency</h4><p>"Act now or your account will be closed."</p></article>
+        <article class="tactic-card"><span>♙</span><h4>Authority</h4><p>"This is your manager. Send the file immediately."</p></article>
+        <article class="tactic-card"><span>⚠</span><h4>Fear</h4><p>"Your payment failed and legal action is pending."</p></article>
+        <article class="tactic-card"><span>◈</span><h4>Curiosity</h4><p>"See the confidential document about you."</p></article>
+        <article class="tactic-card"><span>🎁</span><h4>Reward</h4><p>"Claim your exclusive gift before it expires."</p></article>
+        <article class="tactic-card"><span>♧</span><h4>Familiarity</h4><p>Using a copied logo, name, signature, or conversation style.</p></article>
+      </div>
+    </section>
+
+    <section id="checklist" class="section">
+      <div class="section-heading"><p class="eyebrow">MODULE 05</p><h3>Safety checklist</h3><p>Use this checklist whenever a message asks you to click, open, pay, download, or share information.</p></div>
+      <div class="checklist">
+        <label><input type="checkbox"> Pause when a message creates pressure or fear.</label>
+        <label><input type="checkbox"> Inspect the complete sender address and domain.</label>
+        <label><input type="checkbox"> Hover over links without clicking them.</label>
+        <label><input type="checkbox"> Avoid opening unexpected attachments.</label>
+        <label><input type="checkbox"> Verify unusual requests through a separate channel.</label>
+        <label><input type="checkbox"> Use multi-factor authentication wherever possible.</label>
+        <label><input type="checkbox"> Report suspicious messages to the security team or service provider.</label>
+        <label><input type="checkbox"> If you clicked something suspicious, report it immediately and change affected credentials through the official site.</label>
+      </div>
+      <div class="success-box"><strong>Best practice:</strong> When uncertain, do not respond to the suspicious message. Contact the organization using a trusted phone number, official app, or manually typed website.</div>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="section-heading"><p class="eyebrow">FINAL MODULE</p><h3>Interactive knowledge check</h3><p>Answer all questions, then review your score and explanations.</p></div>
+      <div id="quiz-container" class="quiz-container"></div>
+      <div class="quiz-actions"><button id="submit-quiz" class="primary-btn">Submit Quiz →</button><button id="retry-quiz" class="secondary-btn hidden">Try Again</button></div>
+      <div id="quiz-result" class="quiz-result hidden"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
